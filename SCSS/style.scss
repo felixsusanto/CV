@@ -69,3 +69,43 @@ body{
   @include opacity(0);
   @include single-transition();
 }
+
+.image-link{
+  position: relative;
+  border: 5px solid #fff;
+  @include box-shadow(0 5px 20px silver);
+  background: #bad455;
+  margin-bottom:20px;
+
+  img{
+    @include opacity(1);
+    @include transition-property(opacity);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+  }
+
+  a:after{
+    content: "Check it Out";
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    left: 50%;
+    font-size: 23px;
+    top: 50%;
+    margin-left: -80px;
+    margin-top: -10px;
+    color: #fff;
+    text-shadow: 0 3px 6px #000;
+    @include opacity(0);
+    @include transition-property(opacity);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+  }
+
+  a:hover img{
+    @include opacity(.2);
+  }
+  a:hover:after{
+    @include opacity(1);
+  }
+}

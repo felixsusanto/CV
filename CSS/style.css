@@ -68,3 +68,64 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+.image-link {
+  position: relative;
+  border: 5px solid #fff;
+  -moz-box-shadow: 0 5px 20px silver;
+  -webkit-box-shadow: 0 5px 20px silver;
+  box-shadow: 0 5px 20px silver;
+  background: #bad455;
+  margin-bottom: 20px;
+}
+.image-link img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.image-link a:after {
+  content: "Check it Out";
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  left: 50%;
+  font-size: 23px;
+  top: 50%;
+  margin-left: -80px;
+  margin-top: -10px;
+  color: #fff;
+  text-shadow: 0 3px 6px #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.image-link a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+.image-link a:hover:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
