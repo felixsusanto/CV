@@ -6,6 +6,11 @@ body {
   color: #2c3e50;
 }
 
+#masthead {
+  background: url("../img/banner.png") no-repeat;
+  background-size: cover;
+}
+
 .max-width {
   max-width: 960px;
 }
