@@ -4,6 +4,48 @@
 
 $default-transition-duration: 0.5s;
 
+.rainbow{
+  div{
+    height:3px;
+  }
+  div:nth-child(4n+1){
+    background:#1abc9c;
+  }
+  div:nth-child(4n+2){
+    background:#e74c3c;
+  }
+  div:nth-child(4n+3){
+    background:#2980b9;
+  }
+  div:nth-child(4n+4){
+    background:#f39c12;
+  }
+}
+
+.navbar-nav{
+  li.active a{
+    position:relative;
+    &:after{
+      content:"";
+      display:block;
+      position:absolute;
+      height:3px;
+      bottom:0;
+      left:0;
+      width:100%;
+    }
+  }
+  li:nth-child(3n+1).active a:after{
+    background:#1abc9c;
+  }
+  li:nth-child(3n+2).active a:after{
+    background:#e74c3c;
+  }
+  li:nth-child(3n+3).active a:after{
+    background:#2980b9;
+  }
+}
+
 body{
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
