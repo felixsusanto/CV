@@ -3,22 +3,26 @@
 @import 'compass'; 
 
 $default-transition-duration: 0.5s;
+$turq: #1abc9c;
+$aliz: #e74c3c;
+$blue: #2980b9;
+$yell: #f39c12;
 
 .rainbow{
   div{
     height:3px;
   }
   div:nth-child(4n+1){
-    background:#1abc9c;
+    background:$turq
   }
   div:nth-child(4n+2){
-    background:#e74c3c;
+    background:$aliz;
   }
   div:nth-child(4n+3){
-    background:#2980b9;
+    background:$blue;
   }
   div:nth-child(4n+4){
-    background:#f39c12;
+    background:$yell;
   }
 }
 
@@ -35,14 +39,29 @@ $default-transition-duration: 0.5s;
       width:100%;
     }
   }
-  li:nth-child(3n+1).active a:after{
-    background:#1abc9c;
+  li:nth-child(3n+1){
+    a, a:focus {
+      color:$turq;
+    }
+    &.active a:after{
+      background:$turq;
+    }
   }
-  li:nth-child(3n+2).active a:after{
-    background:#e74c3c;
+  li:nth-child(3n+2){
+    a, a:focus {
+      color:$aliz;
+    }
+    &.active a:after{
+      background:$aliz;
+    }
   }
-  li:nth-child(3n+3).active a:after{
-    background:#2980b9;
+  li:nth-child(3n+3){
+    a, a:focus {
+      color:$yell;
+    }
+    &.active a:after{
+      background:$yell;
+    }
   }
 }
 
