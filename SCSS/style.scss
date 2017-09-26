@@ -15,7 +15,7 @@ $yell: #f39c12;
   div:nth-child(4n+1){
     background:$turq
   }
-  div:nth-child(4n+2){
+  div:nth-child(4n+2){  
     background:$aliz;
   }
   div:nth-child(4n+3){
@@ -31,7 +31,7 @@ $yell: #f39c12;
     position:relative;
     &:after{
       content:"";
-      display:block;
+      display:block; 
       position:absolute;
       height:3px;
       bottom:0;
@@ -92,6 +92,14 @@ body{
     }
     .bg2{
       background:url('../img/pattern/swirl_pattern.png');
+    }
+    .bg3{
+      background:url('../img/pattern/hypnotize.png');
+      background-size: 25%;
+    }
+    .bg4{
+      background:url('../img/pattern/seigaiha.png');
+      background-size: 25%;
     }
   }
 }
