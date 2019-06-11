@@ -82,7 +82,6 @@ body {
   width: 100%;
   z-index: 2000;
   top: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1; }
 
 .section-title {
@@ -90,36 +89,23 @@ body {
   margin-top: -54px; }
 
 .navbar-main nav {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  -webkit-transition: opacity 0.2 ease-in;
+  -o-transition: opacity 0.2 ease-in;
+  transition: opacity 0.2 ease-in; }
 
 .image-link {
   position: relative;
   border: 5px solid #fff;
-  -moz-box-shadow: 0 5px 20px silver;
   -webkit-box-shadow: 0 5px 20px silver;
   box-shadow: 0 5px 20px silver;
   background: #bad455;
   margin-bottom: 20px; }
   .image-link img {
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: ease-in;
-    -o-transition-timing-function: ease-in;
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function: ease-in; }
+    -webkit-transition: opacity 0.2 ease-in;
+    -o-transition: opacity 0.2 ease-in;
+    transition: opacity 0.2 ease-in; }
   .image-link a:after {
     content: "Check it Out";
     text-transform: uppercase;
@@ -132,25 +118,19 @@ body {
     margin-top: -10px;
     color: #fff;
     text-shadow: 0 3px 6px #000;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -moz-transition-timing-function: ease-in;
-    -o-transition-timing-function: ease-in;
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function: ease-in; }
+    -webkit-transition: opacity 0.2 ease-in;
+    -o-transition: opacity 0.2 ease-in;
+    transition: opacity 0.2 ease-in; }
   .image-link a:hover img {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
     opacity: 0.2; }
   .image-link a:hover:after {
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1; }
+
+dl > dt {
+  margin-top: 20px; }
+
+.padded {
+  padding-left: 20px; }
 
 
