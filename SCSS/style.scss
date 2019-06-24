@@ -196,3 +196,22 @@ dl > dt {
 .padded {
   padding-left: 20px;
 }
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  h1 {
+    font-size: 27px;
+  }
+  h2 {
+    font-size: 22px;
+    margin-top: 0.5em;
+  }
+  .lead {
+    font-size: 18px;
+  }
+  .pb {
+    page-break-before: always;
+  }
+}
