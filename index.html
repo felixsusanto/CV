@@ -34,7 +34,7 @@
   <body data-spy="scroll" data-target=".navbar-main">
     <div class="masthead">
       <div class="container-fluid max-width" >
-        <div class="row">
+        <div class="row no-print">
           <div class="col-sm-12">
             <br>
             <img src="img/profile3.jpg" alt="Felix' photo" class="center-block img-circle img-thumbnail" style="width:200px; height:auto;">
@@ -174,31 +174,29 @@
       <div class="row">
         <div class="col-sm-6">
           <section>
-            <div class="visible-xs">
-              <h3 class="text-primary">Expertise</h1>
+            <div >
+              <h3 class="text-primary">Expertise</h3>
               <hr>
             </div>
-            <ul class="">
-              <li>Bootstrap framework and theme customization</li>
-              <li>Wordpress site building and theme development</li>
-              <li>CSS preprocessor language (SASS / SCSS)</li>
-              <li>HTML and CSS 3.0</li>
-              <li>GIT and SVN</li>
-              <li>Angular JS</li>
-              <li>Bower / Grunt</li>
-              <li>Jekyll</li>
-              <li>User Experience (UX)</li>
-              <li>Javascript and jQuery</li>
-              <li>Digital Illustration (vector and bitmap)</li>
-              <li>Adobe Flash, Photoshop, Illustrator, and InDesign</li>
-              <li>Art direction</li>
-              <li>Pre-press production, finishes, and final artwork preparation for printing</li>
-            </ul>
+            <dl class="padded">
+              <dt>Languages</dt>
+              <dd>CSS, HTML, Sass, JavaScript</dd>
+              <dt>Tools</dt>
+              <dd>Bower, Git, Grunt, Webpack</dd>
+              <dt>Platforms</dt>
+              <dd>Wordpress, Wordpress Theme Design</dd>
+              <dt>Frameworks</dt>
+              <dd>React JS, Angular, Jekyll</dd>
+              <dt>Libraries / APIs</dt>
+              <dd>Lodash, jQuery, Redux, Saga, Bootstrap</dd>
+              <dt>Other</dt>
+              <dd>Digital Illustration (vector and bitmap), Adobe Flash, Photoshop, Illustrator, and InDesign</dd>
+            </dl>
           </section>
         </div>
         <div class="col-sm-6">
-          <section id="education">
-            <div class="visible-xs">
+          <section id="education" class="pb">
+            <div>
               <h3 class="text-primary">Education</h1>
               <hr>
             </div>
@@ -220,11 +218,28 @@
               <div class="panel-heading bg4">
                 <div class="row">
                   <div class="col-sm-2 hidden-xs text-right">
+                    <img src="img/thumb/role_dbs.png" alt="image of DBS" class="img-responsive img-circle img-thumbnail">
+                    
+                  </div>
+                  <div class="col-sm-10 col-xs-12">
+                    <h2 class="text-primary">Application Developer Specialist</h2>
+                    <p class="lead"><a href="https://www.dbs.com.sg/personal/default.page" target="_blank"><i class="fa fa-link" style="font-size:0.7em;"></i> DBS</a> | August 2018 – Present (Singapore)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <p>Responsible in building web application and competent in building robust, scalable, high-performance distributed systems that connect microservices with mobile, web and smart devices to offer consumer applications a wide range of functionality</p>
+              </div>
+            </div>
+            <div id="mm" class="panel panel-default">
+              <div class="panel-heading bg2">
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs text-right">
                     <img src="img/thumb/role_pro.png" alt="image of FE dev lead" class="img-responsive img-circle img-thumbnail">
                   </div>
                   <div class="col-sm-10 col-xs-12">
                     <h2 class="text-primary">Front End Developer Team Lead</h2>
-                    <p class="lead"><a href="http://www.onyxisland.com/" target="_blank"><i class="fa fa-link" style="font-size:0.7em;"></i> Onyx Island</a> | March 2017 – Present (Singapore)</p>
+                    <p class="lead"><a href="http://www.onyxisland.com/" target="_blank"><i class="fa fa-link" style="font-size:0.7em;"></i> Onyx Island</a> | March 2017 – August 2018 (Singapore)</p>
                   </div>
                 </div>
               </div>
@@ -256,7 +271,7 @@
                   </div>
                   <div class="col-sm-10 col-xs-12">
                     <h2 class="text-primary">Multimedia Designer</h2>
-                    <p class="lead"><a href="http://www.wds.co/" target="_blank"><i class="fa fa-link" style="font-size:0.7em;"></i> WDS Global</a> | March 2010 – February 2016 (Singapore)</p>
+                    <p class="lead"><a href="http://www.wds.co/" target="_blank"><i class="fa fa-link" style="font-size:0.7em;"></i> Wireless Data Services (Ceased operation in Singapore)</a> | March 2010 – February 2016 (Singapore)</p>
                   </div>
                 </div>
               </div>
@@ -286,18 +301,24 @@
         </div>
       </section>
       
-      <section id="portfolio" class="section-title">
+      <section id="portfolio" class="section-title no-print">
         <div class="row">
           <div class="col-sm-12">
             <h1 class="text-center text-primary">Portfolio</h1>
             <hr>
             <h3>Website Design/Front-End</h3>
 
-            <p>The following are some examples of my recent works in design and front-end development. Bootstrap was used as CSS framework and SCSS ported version of Bootstrap was used in theme customisation. All sites below are responsive.</p>
-            <p>AmoreDio website was built on Wordpress, with all aspects of it built from scratch, starting from conceptualisation, static page building, to theme development using various automation tools.</p>
-            <p style="margin-bottom: 30px;">Check out my code repository on <a href="http://github.com/felixsusanto" target="_blank">GitHub</a> and prototype demo on <a href="http://codepen.io/felixsusanto" target="_blank">Codepen</a> for more information.</p>
+            <p style="padding-bottom: 20px">The following are some examples of my recent works in design and front-end development. Bootstrap was used as CSS framework and SCSS ported version of Bootstrap was used in theme customisation. All sites below are responsive.</p>
+            <!--<p>AmoreDio website was built on Wordpress, with all aspects of it built from scratch, starting from conceptualisation, static page building, to theme development using various automation tools.</p>
+            <p style="margin-bottom: 30px;">Check out my code repository on <a href="http://github.com/felixsusanto" target="_blank">GitHub</a> and prototype demo on <a href="http://codepen.io/felixsusanto" target="_blank">Codepen</a> for more information.</p> -->
 
             <div class="row">
+              <div class="col-sm-12">
+                <div class="image-link">
+                  <a href="https://www.dbs.com.sg/personal/marketplace/travel/hotels/" target="_blank"><img src="img/portfolio/portfolio-8.png" alt="screenshot of site" class="img-responsive"></a>
+                </div>
+                <p class="text-center lead">DBS Marketplace Hotels</p>
+              </div>
               <div class="col-sm-6">
                 <div class="image-link">
                   <a href="http://www.tigerbeer.com/" target="_blank"><img src="img/portfolio/portfolio-6.png" alt="screenshot of site" class="img-responsive"></a>
@@ -354,7 +375,7 @@
         </div>
       </section>
     </div>
-    <section class="footer-logo">
+    <section class="footer-logo no-print">
       <div class="container-fluid max-width">
         <div class="row">
           <div class="col-sm-12">
@@ -392,7 +413,7 @@
       <div class="container-fluid max-width">
         <div class="row">
           <div class="col-sm-12">
-            <p class="lead">
+            <p class="lead no-print">
               <script type="text/javascript">
               //<![CDATA[
               <!--
@@ -413,7 +434,7 @@
               </script>
               Thank you for visiting!
             </p>
-            <p>&copy; 2015-2017 - Felix Susanto</p>
+            <p>&copy; 2015-2019 - Felix Susanto</p>
           </div>
         </div>
       </div>

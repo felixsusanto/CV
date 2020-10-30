@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-@import 'compass'; 
+// @import 'compass'; 
 
 $default-transition-duration: 0.5s;
 $turq: #1abc9c;
@@ -126,7 +126,8 @@ body{
   width:100%;
   z-index:2000;
   top:0;
-  @include opacity(1);
+  opacity: 1;
+  // @include opacity(1);
 }
 
 .section-title{
@@ -135,22 +136,28 @@ body{
 }
 
 .navbar-main nav{
-  @include opacity(0);
-  @include single-transition();
+  opacity: 0;
+  // @include opacity(0);
+  transition: opacity 0.2 ease-in;
+
+
 }
 
 .image-link{
   position: relative;
   border: 5px solid #fff;
-  @include box-shadow(0 5px 20px silver);
+  box-shadow: 0 5px 20px silver;
   background: #bad455;
   margin-bottom:20px;
+  // @include box-shadow(0 5px 20px silver);
 
   img{
-    @include opacity(1);
-    @include transition-property(opacity);
-    @include transition-duration(.2s);
-    @include transition-timing-function(ease-in);
+    opacity: 1;
+    transition: opacity 0.2 ease-in;
+    // @include opacity(1);
+    // @include transition-property(opacity);
+    // @include transition-duration(.2s);
+    // @include transition-timing-function(ease-in);
   }
 
   a:after{
@@ -165,16 +172,46 @@ body{
     margin-top: -10px;
     color: #fff;
     text-shadow: 0 3px 6px #000;
-    @include opacity(0);
-    @include transition-property(opacity);
-    @include transition-duration(.2s);
-    @include transition-timing-function(ease-in);
+    opacity: 0;
+    transition: opacity 0.2 ease-in;
+    // @include opacity(0);
+    // @include transition-property(opacity);
+    // @include transition-duration(.2s);
+    // @include transition-timing-function(ease-in);
   }
 
   a:hover img{
-    @include opacity(.2);
+    // @include opacity(.2);
+    opacity: 0.2;
   }
   a:hover:after{
-    @include opacity(1);
+    // @include opacity(1);
+    opacity: 1;
+  }
+}
+
+dl > dt {
+  margin-top: 20px;
+} 
+.padded {
+  padding-left: 20px;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  h1 {
+    font-size: 27px;
+  }
+  h2 {
+    font-size: 22px;
+    margin-top: 0.5em;
+  }
+  .lead {
+    font-size: 18px;
+  }
+  .pb {
+    page-break-before: always;
   }
 }
